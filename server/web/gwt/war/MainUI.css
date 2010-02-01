@@ -124,3 +124,14 @@ table.utils-dataTable .utils-dataTable-header th {
 	padding: 5px;
 	border: 1px solid #ccc;	
 }
+.breadcrumpMore {
+	width: 15px;
+	display: block;
+	background: transparent url(images/bulletRight.gif) no-repeat;
+	background-position:center center;
+}
+.breadcrumpTab table tbody tr td a {
+	font-weight:bold;
+	text-decoration: none;
+	color: #666;
+}

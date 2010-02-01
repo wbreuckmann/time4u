@@ -5,11 +5,11 @@
 	xmlns:tu="urn:import:de.objectcode.time4u.server.web.gwt.utils.client.ui">
 
 	<g:DockLayoutPanel unit="EM">
-		<g:north size="8">
+		<g:north size="10">
 			<g:HTMLPanel>
 				<table>
 					<tr>
-						<td>Date:</td>
+						<td>Date:&nbsp;&nbsp;&nbsp;</td>
 						<td>
 							<g:PushButton ui:field="prevMonth">&lt;&lt;</g:PushButton>
 						</td>
@@ -24,6 +24,9 @@
 							<g:PushButton ui:field="nextMonth">&gt;&gt;</g:PushButton>
 						</td>
 					</tr>
+				</table>
+				<br />
+				<table>
 					<tr>
 						<td>Rows:</td>
 						<td colspan="5">
@@ -39,8 +42,9 @@
 						</td>
 					</tr>
 					<tr>
-						<td>Project:</td>
-						<td colspan="5">
+						<td><br />You are here:</td>
+						<td colspan="5" class="breadcrumpTab">
+						<br />
 							<tr:ProjectBreadcrumb ui:field="projectBreadcrumb" />
 						</td>
 					</tr>

@@ -26,7 +26,7 @@ public class ProjectBreadcrumb extends Composite implements
 	public ProjectBreadcrumb() {
 		initWidget(breadcrumpTable);
 
-		append(new IdLabelPair(null, "[Root]"));
+		append(new IdLabelPair(null, "Root"));
 	}
 
 	public LinkedList<IdLabelPair> getProjectStack() {
@@ -80,7 +80,7 @@ public class ProjectBreadcrumb extends Composite implements
 
 		for (final IdLabelPair project : projectStack) {
 			if (i > 0) {
-				breadcrumpTable.setText(0, i - 1, ">");
+				breadcrumpTable.setHTML(0, i - 1, "<span class=\"breadcrumpMore\">&nbsp;</span>");
 			}
 			Anchor link = new Anchor(project.getLabel());
 
@@ -115,7 +115,7 @@ public class ProjectBreadcrumb extends Composite implements
 
 		breadcrumpTable.setWidget(0, projectStack.size() * 2, link);
 		if (projectStack.size() > 0) {
-			breadcrumpTable.setText(0, projectStack.size() * 2 - 1, ">");
+			breadcrumpTable.setHTML(0, projectStack.size() * 2 - 1, "<span class=\"breadcrumpMore\">&nbsp;</span>");
 		}
 
 		projectStack.add(project);

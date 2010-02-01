@@ -19,7 +19,11 @@
 			</tr>
 			<tr>
 				<td>
-					<g:PushButton ui:field="closeButton">Close</g:PushButton>
+					<table>
+					<tr>
+					<td><g:PushButton ui:field="closeButton">Close</g:PushButton></td>
+					</tr>
+					</table>
 				</td>
 			</tr>
 		</table>
